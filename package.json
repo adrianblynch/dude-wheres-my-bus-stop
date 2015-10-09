@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/adrianblynch/dude-wheres-my-bus-stop/issues"
   },
-  "homepage": "https://github.com/adrianblynch/dude-wheres-my-bus-stop"
+  "homepage": "https://github.com/adrianblynch/dude-wheres-my-bus-stop",
+  "dependencies": {
+    "boom": "^2.9.0",
+    "hapi": "^10.1.0"
+  }
 }
