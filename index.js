@@ -7,7 +7,7 @@ const stops = require('./bus-stops.json')
 
 server.connection({
 	host: 'localhost',
-	port: 3000,
+	port: PORT,
 	routes: {
 		cors: true
 	}
