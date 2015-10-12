@@ -5,9 +5,12 @@ const Boom = require('boom')
 const server = new Hapi.Server()
 const stops = require('./bus-stops.json')
 
+let port = +process.env.PORT || 3000
+let host = '0.0.0.0'
+
 server.connection({
-	host: 'localhost',
-	port: ~~process.env.PORT || 3000,
+	host: host,
+	port: port,
 	routes: {
 		cors: true
 	}
@@ -32,4 +35,4 @@ server.route({
 	}
 })
 
-server.start(err => console.log('Started server on port 3000'))
+server.start(err => console.log('Started server on port ' + port))
